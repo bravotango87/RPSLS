@@ -70,7 +70,7 @@ namespace RockPaperScissorsLizardSpock
 
         public void ChooseGameMode()
             {
-            Console.WriteLine("Enter 1 for Human v Computer or Enter 2 for Human v Human");
+            Console.WriteLine("Enter 1 for Human v Computer or Enter 2 for Human v Human:");
 
             string userInput = Console.ReadLine();
             if (userInput == "1")
@@ -81,6 +81,10 @@ namespace RockPaperScissorsLizardSpock
             else if (userInput == "2")
             {
                 player2 = new Human();
+            }
+            else
+            {
+                Console.WriteLine("Try Selection Again!");
             }
 
     }

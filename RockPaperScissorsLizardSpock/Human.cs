@@ -4,11 +4,10 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Human : Player //Class (Parent : Child) (inheritance)
+    class Human : Player //Class (Child: Parent) (inheritance)
     {
         // member variables (Has A)
-        public int score;
-        public string chooseGesture;
+       
 
         // constructor (Spawner)
         public Human()
@@ -19,7 +18,7 @@ namespace RockPaperScissorsLizardSpock
         // member methods (Can do)
         public override void ChooseGesture()
         {
-            // Human chooses gesture
+            
         }
 
 
