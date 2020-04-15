@@ -4,7 +4,9 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Human //Base Class (Parent)
+    class Human : Player //Base Class (Parent : Child)
     {
+        //member variables (Has A)
+
     }
 }
