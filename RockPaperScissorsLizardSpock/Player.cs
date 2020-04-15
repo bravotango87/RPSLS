@@ -4,9 +4,11 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    public class Player //Base Class (Parent) store list of gestures (RPSLS)
+    abstract class Player // Parent Class
     {
-        List<string> gestures = new List<string>();
+        // member variables (Has A)
+        public int score;
+        public string chooseGesture;
 
 
     }

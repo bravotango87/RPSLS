@@ -21,7 +21,7 @@ namespace RockPaperScissorsLizardSpock
 
         // member methods (Can do)
         // 1.Display rules (include how many rounds) (Good)
-        // 2.Human v Human or Human v Computer
+        // 2.Human v Human or Human v Computer (Good)
         // 3.Display gesture options
         // 4.Compare gestures (assign point to round winner)
         // 5.Display current score
@@ -55,17 +55,17 @@ namespace RockPaperScissorsLizardSpock
 
             if(userInput == "1")
             {
-                player2 = new Computer();
+                player2 = new Human();
             }
 
             else if(userInput == "2")
             {
-                player2 = new Human();
+                player2 = new Computer(); 
             }
 
             else
             {
-                Console.WriteLine("Try Again!");
+                Console.WriteLine("Try Again!")
             }
 
     }
