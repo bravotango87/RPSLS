@@ -4,11 +4,11 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Game // Base Class (Parent)
+    class Game // Class (Parent)
     {
         // member variables (Has A)
         public int pointsNeededToWin;
-        public List<string> gestureOptions;
+        public List<gestureOptions> gestureOptions;
         public Player player1;
         public Player player2;
 
@@ -18,17 +18,16 @@ namespace RockPaperScissorsLizardSpock
             pointsNeededToWin = 3;
             player1 = new Human();
             gestureOptions = new List<gestureOptions>();
-            gestureOptions.Add("Rock");
+            
+      }
+
+     public void AddGestureOptions(gestureOptions gestureOptions)
+        {
+            gestureOptions.Add(gestureOptions);
             gestureOptions.Add("Paper");
             gestureOptions.Add("Scissors");
             gestureOptions.Add("Lizard");
             gestureOptions.Add("Spock");
-
-      }
-
-     public void AddGestureOptions(GestureOptions gestureOptions)
-        {
-            
         }
 
         // member methods (Can do)
@@ -55,29 +54,33 @@ namespace RockPaperScissorsLizardSpock
         {
             Console.WriteLine("Here Are The Rules Of The Game");
             Console.WriteLine("Each Player Has 1 Turn Per Round");
-            Console.WriteLine("First Player To Win 2 Rounds Wins The Game");
+            Console.WriteLine("Best of 3 Rounds Wins The Game");
             Console.WriteLine("If Both Players Pick Same Gesture, Round Will Continue Until Someone Wins");
+            Console.WriteLine("Rock crushes Scissors");
+            Console.WriteLine("Scissors cuts Paper");
+            Console.WriteLine("Paper covers Rock");
+            Console.WriteLine("Rock crushes Lizard");
+            Console.WriteLine("Lizard poisons Spock");
+            Console.WriteLine("Spock smashes Scissors");
+            Console.WriteLine("Scissors decapitates Lizard");
+            Console.WriteLine("Lizard eats Paper");
+            Console.WriteLine("Paper disproves Spock");
+            Console.WriteLine("Spock vaporizes Rock");
         }
 
         public void ChooseGameMode()
-        {
-            Console.WriteLine("Enter 1 for Human v Human or Enter 2 for Human v Computer:");
+            {
+            Console.WriteLine("Enter 1 for Human v Computer or Enter 2 for Human v Human");
 
             string userInput = Console.ReadLine();
-
-            if(userInput == "1")
-            {
-                player2 = new Human();
-            }
-
-            else if(userInput == "2")
+            if (userInput == "1")
             {
                 player2 = new Computer(); 
             }
 
-            else
+            else if (userInput == "2")
             {
-                Console.WriteLine("Try Again!");
+                player2 = new Human();
             }
 
     }

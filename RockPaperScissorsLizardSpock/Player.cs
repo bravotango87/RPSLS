@@ -9,8 +9,17 @@ namespace RockPaperScissorsLizardSpock
         // member variables (Has A)
         public int score;
         public string chooseGesture;
+        
 
+        // constructor (Spawner)
+        public Player()
+        {
 
+        }
+
+        // member methods (Can do)
+        public abstract void ChooseGesture();
+         
     }
 }
  
