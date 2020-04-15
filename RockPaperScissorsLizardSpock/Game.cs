@@ -17,7 +17,19 @@ namespace RockPaperScissorsLizardSpock
       {
             pointsNeededToWin = 3;
             player1 = new Human();
+            gestureOptions = new List<gestureOptions>();
+            gestureOptions.Add("Rock");
+            gestureOptions.Add("Paper");
+            gestureOptions.Add("Scissors");
+            gestureOptions.Add("Lizard");
+            gestureOptions.Add("Spock");
+
       }
+
+     public void AddGestureOptions(GestureOptions gestureOptions)
+        {
+            
+        }
 
         // member methods (Can do)
         // 1.Display rules (include how many rounds) (Good)
@@ -65,7 +77,7 @@ namespace RockPaperScissorsLizardSpock
 
             else
             {
-                Console.WriteLine("Try Again!")
+                Console.WriteLine("Try Again!");
             }
 
     }

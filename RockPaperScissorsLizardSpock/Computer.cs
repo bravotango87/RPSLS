@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Computer : Player // Parent:Child (inheritance)
+    class Computer : Player //  Class (Parent : Child) (inheritance)
     {
         // memmber variables (Has A)
         public int score;
