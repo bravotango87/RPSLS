@@ -8,35 +8,49 @@ namespace RockPaperScissorsLizardSpock
     class Human : Player
     {
         // member variables (Has A)
-        public string name;
-        public bool isPlayersTurn;
-
-
-
-
-
 
         // constructor (Spawner)
         public Human()
         {
-            name = "Player 1";
-            isPlayersTurn = true;
 
         }
 
-
-
+          
+        public override void SetName()
+        {
+            Console.WriteLine("Please enter in your name.");
+            name = Console.ReadLine();
+        }
 
 
 
         // member methods (Can do)
         // human chooses gesture here
-        
-        public override void ChooseGesture(List<string> gestureOptions)
+
+        public virtual void ChooseGesture(List<string> gestureOptions)
         {
-            Console.WriteLine("Player Chooses:"
+            Console.WriteLine("Please choose a gesture.");
+            string userInput = Console.ReadLine();
+
+            switch (gestureOptions)
+            {
+                case "Rock":
+                    Console.WriteLine("Player chooses" + userInput);
+                    break;
+                case "Paper":
+                    Console.WriteLine("Player chooses" + userInput);
+                    break;
+                case "Scissors":
+                    Console.WriteLine("Player chooses" + userInput);
+                    break;
+                case "Lizard":
+                    Console.WriteLine("Player chooses" + userInput);
+                    break;
+                case "Spock":
+                    Console.WriteLine("Player chooses" + userInput);
+                    break;
+            }
+
+
         }
-
-
-    }
 }

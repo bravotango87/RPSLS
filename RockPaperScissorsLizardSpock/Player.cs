@@ -9,35 +9,40 @@ namespace RockPaperScissorsLizardSpock
     {
         // member variables (Has A)
         public int score;
-        public string chosenGesture;
-        
+        public string choice;
+        public List<string> gestureOptions;
+        public string name;
 
 
 
 
 
-
+         
 
         // constructor (Spawner)
-        public Player(string Player)
+        public Player()
         {
-            name = Player;
+            gestureOptions = new List<string>();
+
+            gestureOptions.Add("Rock");
+            gestureOptions.Add("Paper");
+            gestureOptions.Add("Scissors");
+            gestureOptions.Add("Lizard");
+            gestureOptions.Add("Spock");
+            SetName();
         }
 
-        
+
+
+         
 
 
 
-
-
-        
+        public abstract void SetName();
 
         // member methods (Can do)
-        public virtual void ChooseGesture();
-        public void choice()
-        {
-            Console.WriteLine("Players chooses gesture");
-        }
+        public abstract void ChooseGesture();
+
          
     }
 }

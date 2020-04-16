@@ -4,13 +4,13 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Game
+    public class Game
     {
         // member variables (Has A)
-        public int pointsNeededToWin;
-        public List<gestureOptions> gestureOptions;
-        public Player player1;
-        public Player player2;
+        pointsNeededToWin;
+        List<gestureOptions> gestureOptions;
+        Player player1;
+        Player player2;
 
       // constructor (Spawner)
       public Game()
@@ -18,16 +18,16 @@ namespace RockPaperScissorsLizardSpock
             pointsNeededToWin = 3;
             player1 = new Human();
             gestureOptions = new List<gestureOptions>();
+            gestureOptions.Add
+
+
             
       }
 
-     public void AddGestureOptions(gestureOptions gestureOptions)
-        {
-            gestureOptions.Add(gestureOptions);
-            gestureOptions.Add("Paper");
-            gestureOptions.Add("Scissors");
-            gestureOptions.Add("Lizard");
-            gestureOptions.Add("Spock");
+     public void AddGestureOptions(List<string> gestureOptions) 
+        { 
+
+
         }
 
         // member methods (Can do)
