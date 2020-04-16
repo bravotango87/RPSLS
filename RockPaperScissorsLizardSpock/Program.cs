@@ -2,10 +2,6 @@
 
 namespace RockPaperScissorsLizardSpock
 {
-    
-    
-    
-    
     class Program
     {
         static void Main(string[] args)
@@ -14,7 +10,7 @@ namespace RockPaperScissorsLizardSpock
             game.RunGame();
             gestureOptions gesture = new gestureOptions();
             game.AddGestureOptions(gesture);
-            
+
             
         
         }
