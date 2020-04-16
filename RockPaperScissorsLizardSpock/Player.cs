@@ -7,20 +7,29 @@ namespace RockPaperScissorsLizardSpock
     abstract class Player // Parent Class
     {
         // member variables (Has A)
-        private string name;
-        private string
+        public string name;
+        public int score;
+        public string chosenGesture;
+
+       
 
 
-        
-        
+
+
 
         // constructor (Spawner)
-        public Player()
+        public Player(string Player)
         {
-            choice = choice;
-
-
+            name = Player;
         }
+
+        
+
+
+
+
+
+        
 
         // member methods (Can do)
         public abstract void ChooseGesture();

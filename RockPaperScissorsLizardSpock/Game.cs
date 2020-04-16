@@ -33,7 +33,7 @@ namespace RockPaperScissorsLizardSpock
         // member methods (Can do)
         // 1.Display rules (include how many rounds) (Good)
         // 2.Human v Human or Human v Computer (Good)
-        // 3.Display gesture options in player class
+        // 3.Display gesture options
         // 4.Compare gestures (assign point to round winner)
         // 5.Display current score
         // 6.Check for gamer winner (best 2/3)
@@ -70,7 +70,7 @@ namespace RockPaperScissorsLizardSpock
 
         public void ChooseGameMode()
             {
-            Console.WriteLine("Enter 1 for Human v Computer or Enter 2 for Human v Human:");
+            Console.WriteLine("Enter 1 for Human v Computer or Enter 2 for Human v Human");
 
             string userInput = Console.ReadLine();
             if (userInput == "1")
