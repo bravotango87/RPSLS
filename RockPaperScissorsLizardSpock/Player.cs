@@ -4,14 +4,15 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    abstract class Player // Parent Class
+          // Parent Class
+    abstract class Player
     {
         // member variables (Has A)
-        public string name;
         public int score;
         public string chosenGesture;
+        
 
-       
+
 
 
 

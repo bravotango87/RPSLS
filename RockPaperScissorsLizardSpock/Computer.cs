@@ -4,16 +4,19 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Computer : Player // Child : Parent (inheritance)
+          // Child : Parent (inheritance)
+    class Computer : Player
     {
         // memmber variables (Has A)
+        public string name;
+        public bool isComputerTurn;
         
         
 
         // constructor (Spawner)
         public Computer()
         {
-           
+            name = "Computer 1";  
 
         }
 

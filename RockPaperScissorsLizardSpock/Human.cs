@@ -4,26 +4,51 @@ using System.Text;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class Human : Player // Child : Parent (inheritance)
+    // Child : Parent (inheritance)
+    class Human : Player
     {
         // member variables (Has A)
-        public string Player = "Player 1";
-        
+        public string name;
+        public bool isPlayersTurn;
 
-        
-        
-       
-            
+
+
+
+
+
         // constructor (Spawner)
-        
-      
+        public Human()
+        {
+            name = "Player 1";
+            isPlayersTurn = true;
 
-         
-        
+        }
+
+
+
+
+
 
         // member methods (Can do)
-        public override void ChooseGesture()
         // human chooses gesture here
+        public override void ChooseGesture(List<string> gestureOptions)
+            
+            if(isPlayersTurn == true)
+            {
+               Console.Writeline("Please Choose Gesture:);
+            }
+            else if
+            {
+            }
+        
+        
+        
+
+        
+        {
+
+            
+        }
         {
             Console.WriteLine("Player Chooses:");
         }
