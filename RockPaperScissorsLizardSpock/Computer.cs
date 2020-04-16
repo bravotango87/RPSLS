@@ -22,12 +22,38 @@ namespace RockPaperScissorsLizardSpock
 
         // member methods (Can do)
 
-        public override void ChooseGesture(List<string> gestureOptions)
+
         // computer chooses gesture here
         // generate random nubmer
         // use that number to select a random value from list of gestures
+        public virtual void ChooseGesture(List<string> gestureOptions)
         {
-            choice = gestureOptions[numGenerated];
-        }
+            Console.Write("Please choose a gesture");
+            string gesture = Console.ReadLine();
+
+            switch (gestureOptions)
+            {
+                case "Rock":
+                    Console.WriteLine("Computer chooses" + gestureOptions);
+                    break;
+                case "Paper":
+                    Console.WriteLine("Computer chooses" + gestureOptions);
+                    break;
+                case "Scissors":
+                    Console.WriteLine("Computer chooses" + gestureOptions);
+                    break;
+                case "Lizard":
+                    Console.WriteLine("Computer chooses" + gestureOptions);
+                    break;
+                case "Spock":
+                    Console.WriteLine("Computer chooses" + gestureOptions);
+                    break;
+            }
+
+
+            }
+        
+           
+        
     }
 }

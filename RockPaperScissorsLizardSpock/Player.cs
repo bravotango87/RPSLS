@@ -33,10 +33,10 @@ namespace RockPaperScissorsLizardSpock
         
 
         // member methods (Can do)
-        public abstract void ChooseGesture();
+        public virtual void ChooseGesture();
         public void choice()
         {
-            Console.WriteLine("");
+            Console.WriteLine("Players chooses gesture");
         }
          
     }

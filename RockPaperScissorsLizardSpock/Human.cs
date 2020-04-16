@@ -31,26 +31,10 @@ namespace RockPaperScissorsLizardSpock
 
         // member methods (Can do)
         // human chooses gesture here
+        
         public override void ChooseGesture(List<string> gestureOptions)
-            
-            if(isPlayersTurn == true)
-            {
-               Console.Writeline("Please Choose Gesture:);
-            }
-            else if
-            {
-            }
-        
-        
-        
-
-        
         {
-
-            
-        }
-        {
-            Console.WriteLine("Player Chooses:");
+            Console.WriteLine("Player Chooses:"
         }
 
 
