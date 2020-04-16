@@ -9,7 +9,7 @@ namespace RockPaperScissorsLizardSpock
     {
         // memmber variables (Has A)
         public string name;
-        public bool isComputerTurn;
+        public
         
         
 
@@ -27,8 +27,13 @@ namespace RockPaperScissorsLizardSpock
         // generate random nubmer
         // use that number to select a random value from list of gestures
         public override void ChooseGesture(List<string> gestureOptions)
+
+        // generate random gesture from the list
         {
-            choice = gestureOptions[ ]; // generate random num between 0-5 & use random as index
+            var random = new Random();
+            var list = new List<string> { "rock", "paper", "scissors", "lizard", "spock" };
+            int index = random.Next(list.Count);
+            Console.WriteLine(list[index]); 
         }
             
         
