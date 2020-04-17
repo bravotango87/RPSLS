@@ -7,25 +7,24 @@ namespace RockPaperScissorsLizardSpock
     public class Game
     {
         // member variables (Has A)
-        pointsNeededToWin;
-        List<gestureOptions> gestureOptions;
+        int pointsNeededToWin;
         Player player1;
         Player player2;
 
-      // constructor (Spawner)
-      public Game()
-      {
+        // constructor (Spawner)
+        public Game()
+        {
             pointsNeededToWin = 3;
             player1 = new Human();
-            gestureOptions = new List<gestureOptions>();
-            gestureOptions.Add
-
-
             
+  
+
+
+
       }
 
-     public void AddGestureOptions(List<string> gestureOptions) 
-        { 
+        public void AddGestureOptions(List<string> gestureOptions)
+        {
 
 
         }
@@ -40,7 +39,7 @@ namespace RockPaperScissorsLizardSpock
         // 7.If no winneer: repeat steps 3-6
         // 8.If winner: display final result
         // 9.Ask to play again
-     
+
         public void RunGame()
         {
             DisplayRules();
@@ -69,13 +68,13 @@ namespace RockPaperScissorsLizardSpock
         }
 
         public void ChooseGameMode()
-            {
+        {
             Console.WriteLine("Enter 1 for Human v Computer or Enter 2 for Human v Human");
 
             string userInput = Console.ReadLine();
             if (userInput == "1")
             {
-                player2 = new Computer(); 
+                player2 = new Human();
             }
 
             else if (userInput == "2")
@@ -87,5 +86,7 @@ namespace RockPaperScissorsLizardSpock
                 Console.WriteLine("Try Selection Again!");
             }
 
+        }
     }
+
 }

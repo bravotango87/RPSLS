@@ -15,7 +15,7 @@ namespace RockPaperScissorsLizardSpock
 
         }
 
-          
+
         public override void SetName()
         {
             Console.WriteLine("Please enter in your name.");
@@ -27,18 +27,20 @@ namespace RockPaperScissorsLizardSpock
         // member methods (Can do)
         // human chooses gesture here
 
-        public virtual void ChooseGesture(List<string> gestureOptions)
+        public override void ChooseGesture()
         {
             Console.WriteLine("Please choose a gesture.");
             string userInput = Console.ReadLine();
 
-            switch (gestureOptions)
+            switch (userInput)
             {
                 case "Rock":
-                    Console.WriteLine("Player chooses" + userInput);
+                    Console.WriteLine("Player chooses Rock");
+                    choice = "Rock";
                     break;
                 case "Paper":
                     Console.WriteLine("Player chooses" + userInput);
+                    choice = "Paper";
                     break;
                 case "Scissors":
                     Console.WriteLine("Player chooses" + userInput);
@@ -49,8 +51,13 @@ namespace RockPaperScissorsLizardSpock
                 case "Spock":
                     Console.WriteLine("Player chooses" + userInput);
                     break;
+                default:
+                    Console.WriteLine("Invalid choice. Try again.");
+                    ChooseGesture();
+                    break;
             }
 
 
         }
+    }
 }
