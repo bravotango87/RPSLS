@@ -5,7 +5,7 @@ using System.Text;
 namespace RockPaperScissorsLizardSpock
 {
     // Child : Parent (inheritance)
-    class Human : Player
+    public class Human : Player
     {
         // member variables (Has A)
 
@@ -13,15 +13,11 @@ namespace RockPaperScissorsLizardSpock
         // constructor (Spawner)
         public Human()
         {
-
+            score = 0;
         }
 
 
-        public override void SetName()
-        {
-            Console.WriteLine("Please enter in your name.");
-            name = Console.ReadLine();
-        }
+        
 
 
 
@@ -30,37 +26,50 @@ namespace RockPaperScissorsLizardSpock
 
         public override void ChooseGesture()
         {
-            bool gestureChosen = false;
-            while (gestureChosen == false) { }
+            Console.WriteLine("Choose a gesture to perform:");
+            DisplayGestureOptions();
+            bool validChoice = false;
+            
 
-
-                Console.WriteLine("Please choose a gesture.");
-            string userInput = Console.ReadLine();
-
-            switch (userInput)
+            while (!validChoice)
             {
+                string userInput = Console.ReadLine();
+                switch (userInput)
+                {
 
-                case "Rock":
-                    Console.WriteLine("Player chooses Rock");
-                    choice = "Rock";
-                    break;
-                case "Paper":
-                    Console.WriteLine("Player chooses" + userInput);
-                    choice = "Paper";
-                    break;
-                case "Scissors":
-                    Console.WriteLine("Player chooses" + userInput);
-                    break;
-                case "Lizard":
-                    Console.WriteLine("Player chooses" + userInput);
-                    break;
-                case "Spock":
-                    Console.WriteLine("Player chooses" + userInput);
-                    break;
-                default:
-                    Console.WriteLine("Invalid choice. Try again.");
-                    ChooseGesture();
-                    break;
+
+
+                    case "Rock":
+                        Console.WriteLine("Player chooses Rock");
+                        choice = "Rock";
+                        validChoice = true;
+                        break;
+                    case "Paper":
+                        Console.WriteLine("Player chooses" + userInput);
+                        choice = "Paper";
+                        validChoice = true;
+                        break;
+                    case "Scissors":
+                        Console.WriteLine("Player chooses" + userInput);
+                        choice = "Scissors";
+                        validChoice = true;
+                        break;
+                    case "Lizard":
+                        Console.WriteLine("Player chooses" + userInput);
+                        choice = "Lizard";
+                        validChoice = true;
+                        break;
+                    case "Spock":
+                        Console.WriteLine("Player chooses" + userInput);
+                        choice = "Spock";
+                        validChoice = true;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Try again.");
+                        validChoice = false;
+
+                        break;
+                }
             }
 
 

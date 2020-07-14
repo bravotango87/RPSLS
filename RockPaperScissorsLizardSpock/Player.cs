@@ -51,18 +51,17 @@ namespace RockPaperScissorsLizardSpock
                 Console.WriteLine(gesture);
             }
         }
-        public abstract void AssignGesture();
-
-
-
-
-
-
-
-
-        public abstract void SetName();
-
         public abstract void ChooseGesture();
+
+
+
+
+
+
+
+
+        
+
 
          
     }
