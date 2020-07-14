@@ -9,6 +9,7 @@ namespace RockPaperScissorsLizardSpock
     {
         // member variables (Has A)
 
+
         // constructor (Spawner)
         public Human()
         {
@@ -29,11 +30,16 @@ namespace RockPaperScissorsLizardSpock
 
         public override void ChooseGesture()
         {
-            Console.WriteLine("Please choose a gesture.");
+            bool gestureChosen = false;
+            while (gestureChosen == false) { }
+
+
+                Console.WriteLine("Please choose a gesture.");
             string userInput = Console.ReadLine();
 
             switch (userInput)
             {
+
                 case "Rock":
                     Console.WriteLine("Player chooses Rock");
                     choice = "Rock";
