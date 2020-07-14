@@ -18,10 +18,7 @@ namespace RockPaperScissorsLizardSpock
         }
 
         // member methods (Can do)
-        public override void SetName()
-        {
-            name = "Computer";
-        }
+       
 
         // computer chooses gesture here
         // generate random nubmer
@@ -30,15 +27,45 @@ namespace RockPaperScissorsLizardSpock
 
         // generate random gesture from the list
         {
-            var random = new Random();
-            //list = new List<string> { "rock", "paper", "scissors", "lizard", "spock" };
-            int index = random.Next(gestureOptions.Count);
-            choice = gestureOptions[index];
-            Console.WriteLine("Computer has choose " + choice); 
+            Random rnd = new Random();
+            int i = RandomNumber(rnd);
+
+            choice = gestureOptions[i];
+
+            if (choice == "1")
+            {
+                choice = "Rock";
+            }
+            if (choice == "2")
+            {
+                choice = "Paper";
+            }
+            if (choice == "3")
+            {
+                choice = "Sissors";
+            }
+            if (choice == "4")
+            {
+                choice = "Lizard";
+            }
+            if (choice == "5")
+            {
+                choice = "Spock";
+            }
+
         }
-            
-        
-           
-        
+
+
+
+        public override void SetName()
+        {
+            name = "Computer";
+        }
+
+        public int RandomNumber(Random random)
+        {
+            int numberGenerated = random.Next(1, 5);
+            return numberGenerated;
+        }
     }
 }

@@ -11,6 +11,7 @@ namespace RockPaperScissorsLizardSpock
 
 
         public int score;
+        public string name;
         public string choice;
         public List<string> gestureOptions;
 
@@ -53,7 +54,7 @@ namespace RockPaperScissorsLizardSpock
         }
         public abstract void ChooseGesture();
 
-
+        public abstract void SetName();
 
 
 
